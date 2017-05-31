@@ -1,0 +1,79 @@
+body, div, ul, li, p
+{
+    margin: 0;
+    padding: 0;
+}
+
+.container
+{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.canvasContainer
+{
+    float: left;
+    width: 800px;
+    height: 600px;
+    border: 4px solid black;
+}
+
+.formContainer
+{
+    width: 300px;
+    float: left;
+    border: 2px solid black;
+    margin-top: 50px;
+}
+
+.formItem
+{
+    margin: 20px auto 0;
+    width: 280px;
+
+}
+
+.form select, input
+{
+    width: 280px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+.circleSettings, .triangleSettings, .rectangleSettings
+{
+    margin: 0 auto;
+    display: none;
+}
+
+
+
+.point
+{
+    margin: 0 auto;
+    width: 280px;
+}
+
+.triangleSettings input, .rectangleSettings input
+{
+    width: 100px;
+}
+
+.circleSettings
+{
+    display: block;
+}
+
+.basicSettings:last-child
+{
+    margin-bottom: 30px;
+}
+
+.info
+{
+    width: 280px;
+    margin: 20px auto 0;
+    font-size: 14pt;
+    
+}
+

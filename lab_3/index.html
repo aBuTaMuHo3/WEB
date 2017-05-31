@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Лабораторная работа 3</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/style.[49e16097].css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="canvasContainer col-xs-12 col-sm-8">
+          <canvas class="canvas img-responsive" width="800" height="600" id="canvas"></canvas>
+        </div>
+        <div class="settingsMenu col-xs-12 col-sm-4">
+          <form class="form-horizontal" id="settingsForm">
+            <div class="form-group row">
+              <label for = "currentShape" class="col-xs-12 col-sm-6 control-label">Выберете тип фигуры</label>
+              <select id="currentShape" class = "form-control input-small">
+                <option value="circle">Круг</option>
+                <option value="triangle">Треугольник</option>
+                <option value="rectangle">Прямоугольник</option>
+              </select>
+            </div>
+            <div class="form-group row" id = "colorSettings">
+              <label for = "shapeFillColor" class="col-xs-12 col-sm-6 control-label">Введите цвет фигуры</label>
+              <div class="col-xs-12 col-sm-6">
+                <input type="text" class="form-control"  id="shapeFillColor" />
+              </div>
+              <label for = "shapeBorderColor" class="col-xs-12 col-sm-6 control-label">Введите цвет цвет обводки</label>              
+              <div class="col-xs-12 col-sm-6">
+                <input type="text" class="form-control"  id="shapeBorderColor" />
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="circleSettings" id="circleBlock">
+                <label for = "radius" class="col-xs-12 col-sm-6 control-label">Радиус</label>
+                <div class="col-xs-12 col-sm-6">
+                  <input type="text" class="form-control"  id="radius" />
+                </div>
+                <label for = "centerX" class="col-xs-12 col-sm-6 control-label">Позиция центра по Х</label>
+                <div class="col-xs-12 col-sm-6">
+                  <input type="text" class="form-control"  id="centerX" />
+                </div>
+                <label for = "centerY" class="col-xs-12 col-sm-6 control-label">Позиция центра по Y</label>
+                <div class="col-xs-12 col-sm-6">
+                  <input type="text" class="form-control"  id="centerY" />
+                </div>
+              </div>
+              <div class="triangleSettings" hidden = "true" id="triangleBlock">
+                <div class="point">
+                  <label for = "triangleX1" class="col-xs-12 col-sm-6 control-label">Х1</label>
+                  <div class="col-xs-12 col-sm-6">
+                    <input type="text" class="form-control"  id="triangleX1" />
+                  </div>
+                  <label for = "triangleY1" class="col-xs-12 col-sm-6 control-label">Y1</label>                  
+                  <div class="col-xs-12 col-sm-6">
+                    <input type="text" class="form-control"  id="triangleY1" />
+                  </div>
+                </div>
+                <div class="point">
+                  <label for = "triangleX2" class="col-xs-12 col-sm-6 control-label">Х2</label>
+                  <div class="col-xs-12 col-sm-6">
+                    <input type="text" class="form-control"  id="triangleX2" />
+                  </div>
+                  <label for = "triangleY2" class="col-xs-12 col-sm-6 control-label">Y2</label>
+                  <div class="col-xs-12 col-sm-6">
+                    <input type="text" class="form-control"  id="triangleY2" />
+                  </div>
+                </div>
+                <div class="point">
+                  <label for = "triangleX3" class="col-xs-12 col-sm-6 control-label">Х3</label>
+                  <div class="col-xs-12 col-sm-6">
+                    <input type="text" class="form-control"  id="triangleX3" />
+                  </div>
+                  <label for = "triangleY3" class="col-xs-12 col-sm-6 control-label">Y3</label>
+                  <div class="col-xs-12 col-sm-6">
+                    <input type="text" class="form-control"  id="triangleY3" />
+                  </div>
+                </div>
+              </div>
+              <div class="rectangleSettings" hidden = "true" id="rectangleBlock">
+                <div class="point">
+                  <label for = "rectangleX1" class="col-xs-12 col-sm-6 control-label">Х1</label>
+                  <div class="col-xs-12 col-sm-6">
+                    <input type="text" class="form-control"  id="rectangleX1" />
+                  </div>
+                  <label for = "rectangleY1" class="col-xs-12 col-sm-6 control-label">Y1</label>
+                  <div class="col-xs-12 col-sm-6">
+                    <input type="text" class="form-control"  id="rectangleY1" />
+                  </div>
+                </div>
+                <div class="point">
+                  <label for = "rectangleX2" class="col-xs-12 col-sm-6 control-label">Х2</label>
+                  <div class="col-xs-12 col-sm-6">
+                    <input type="text" class="form-control"  id="rectangleX2" />
+                  </div>
+                  <label for = "rectangleY2" class="col-xs-12 col-sm-6 control-label">Y2</label>
+                    <div class="col-xs-12 col-sm-6">
+                  <input type="text" class="form-control"  id="rectangleY2" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+          <div class="info" id="infoBlock"></div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/script.[f8f4d6a6].js"></script>
+  </body>
+</html>

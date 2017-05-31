@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Лабораторная работа 2</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="canvasContainer">
+          <canvas class="canvas" width="800" height="600" id="canvas"></canvas>
+        </div>
+        <div class="formContainer">
+          <form class="settings" id="settingsForm">
+            <div class="formItem">
+              <label for = "currentShape">Выберете тип фигуры</label>
+              <select id="currentShape">
+                <option value="circle">Круг</option>
+                <option value="triangle">Треугольник</option>
+                <option value="rectangle">Прямоугольник</option>
+              </select>
+            </div>
+            <div class="formItem">
+              <label for = "shapeFillColor">Введите цвет фигуры</label>
+              <input type="text" id="shapeFillColor" />   
+              <label for = "shapeBorderColor">Введите цвет цвет обводки</label>              
+              <input type="text" id="shapeBorderColor" />
+            </div>
+            <div class="formItem">
+              <div class="circleSettings" id="circleBlock">
+                <label for = "radius">Радиус</label>
+                <input type="text" id="radius" />
+                <label for = "centerX">Позиция центра по Х</label>
+                <input type="text" id="centerX" />
+                <label for = "centerY">Позиция центра по Y</label>
+                <input type="text" id="centerY" />
+              </div>
+              <div class="triangleSettings" id="triangleBlock">
+                <div class="point">
+                  <label for = "triangleX1">Х1</label>
+                  <input type="text" id="triangleX1" />
+                  <label for = "triangleY1">Y1</label>                  
+                  <input type="text" id="triangleY1" />
+                </div>
+                <div class="point">
+                  <label for = "triangleX2">Х2</label>
+                  <input type="text" id="triangleX2" />
+                  <label for = "triangleY2">Y2</label>
+                  <input type="text" id="triangleY2" />                  
+                </div>
+                <div class="point">
+                  <label for = "triangleX3">Х3</label>
+                  <input type="text" id="triangleX3" />
+                  <label for = "triangleY3">Y3</label>
+                  <input type="text" id="triangleY3" />
+                </div>
+              </div>
+              <div class="rectangleSettings" id="rectangleBlock">
+                <div class="point">
+                  <label for = "rectangleX1">Х1</label>
+                  <input type="text" id="rectangleX1" />
+                  <label for = "rectangleY1">Y1</label>
+                  <input type="text" id="rectangleY1" />
+                </div>
+                <div class="point">
+                  <label for = "rectangleX2">Х2</label>
+                  <input type="text" id="rectangleX2" />
+                  <label for = "rectangleY2">Y2</label>
+                  <input type="text" id="rectangleY2" />
+                </div>
+              </div>
+            </div>
+          </form>
+          <div class="info" id="infoBlock"></div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/shape.js"></script>
+    <script type="text/javascript" src="js/circle.js"></script>
+    <script type="text/javascript" src="js/triangle.js"></script>
+    <script type="text/javascript" src="js/rectangle.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
