@@ -1,0 +1,27 @@
+.settings-menu
+{
+    margin-top: 20px;
+    background: #fff;
+    border: 2px solid black
+}
+
+.form-horizontal
+{
+    margin-top: 50px;
+}
+
+.info
+{
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+canvas
+{
+    background: #fff;
+    margin: 20px 0;
+    border: 2px solid black;
+}
